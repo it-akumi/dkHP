@@ -1,0 +1,17 @@
+body {
+	padding-top:	47px;
+}
+
+.top-image {
+	width:		1335px;
+	height:		400px;
+}
+
+/* CSS mediaquery */
+@media screen and (max-width:479px)
+{
+	.top-image{
+		width:	479px;
+		height:	160px;
+	}
+}
