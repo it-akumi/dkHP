@@ -16,7 +16,7 @@ body {
 	bottom:			0;
 	width:			100%;
 	/* Set the fixed height of the footer here */
-	height:			80px;
+	height:			90px;
 	background-color:	#222222;
 }
 
@@ -32,9 +32,12 @@ body {
 /* Custom page CSS
  * -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
+body {
+	font-size:		18px;
+}
 
 body > .container {
-	  padding: 60px 15px 0;
+	  padding: 		60px 15px 0;
 }
 
 .container .text-muted {
