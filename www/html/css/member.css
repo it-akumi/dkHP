@@ -1,0 +1,15 @@
+caption {
+	padding-top:	80px;
+	font-size:	30px;
+	color:		black;
+}
+
+.table {
+	width:		1000px;
+	margin:		0 auto;
+}
+
+.department {
+	border-top:	solid 2px blue;
+	border-bottom:	solid 2px blue;
+}

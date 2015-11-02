@@ -1,0 +1,14 @@
+.pull-left{
+	padding-left:	40px;
+}
+
+.calendar{
+	height:		600px;
+	width:		600px;
+	border:		0px;
+}
+
+.pull-right{
+	padding-right:	40px;
+	width:		600px;
+}
