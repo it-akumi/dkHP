@@ -7,6 +7,8 @@ html
   title 電気通信大学 体育会剣道部
   link(href="css/bootstrap.min.css" type="text/css" rel="stylesheet")
   link(href="css/base.css" type="text/css" rel="stylesheet")
+  // それぞれのページに特有のCSSを読み込む
+  block each_css
  body
   nav.navbar.navbar-inverse.navba-fixed-top
    div.container
@@ -19,20 +21,9 @@ html
      a.navbar-brand(href="./index.html") 電気通信大学 体育会剣道部
     div#navbar.collapse.navbar-collapse
      ul.nav.navbar-nav
-      li.active 
-       a(href="./index.html") トップ
-      li
-       a(href="./clubInfo.html") 部活紹介
-      li
-       a(href="./member.html") 部員紹介
-      li
-       a(href="./schedule.html") 予定表
-      li
-       a(href="./result.html") 試合結果
-      li
-       a(href="./scene.html") 活動風景
-      li
-       a(href="./link.html") リンク
+      // ナビゲーションバーここから active属性を付け替えるためにblock navbarを用いる
+      block navbar
+      // ナビゲーションバーここまで
 
   // 各ページのコンテンツはここから
   block content
