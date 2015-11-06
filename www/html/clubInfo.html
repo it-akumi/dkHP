@@ -8,18 +8,19 @@
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="css/base.css" type="text/css" rel="stylesheet">
     <!-- それぞれのページに特有のCSSを読み込む-->
+    <link href="css/clubInfo.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-inverse navba-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="./index.html" class="navbar-brand">電気通信大学 体育会剣道部</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <!-- ナビゲーションバーここから active属性を付け替えるためにblock navbarを用いる-->
+            <!-- ナビゲーションバーここから-->
             <li><a href="./index.html">トップ</a></li>
-            <li class="active"><a href="./clubInfo.html">部活紹介</a></li>
+            <li><a href="./clubInfo.html">部活紹介</a></li>
             <li><a href="./member.html">部員紹介</a></li>
             <li><a href="./schedule.html">予定表</a></li>
             <li><a href="./result.html">試合結果</a></li>
@@ -31,71 +32,83 @@
       </div>
     </nav>
     <!-- 各ページのコンテンツはここから-->
-    <h1>稽古時間</h1>
-    <table>
-      <tr>
-        <td>月曜日</td>
-        <td>16:30~18:00</td>
-      </tr>
-      <tr>
-        <td>水曜日</td>
-        <td>16:30~18:00</td>
-      </tr>
-      <tr>
-        <td>金曜日</td>
-        <td>16:30~18:00</td>
-      </tr>
-      <tr>
-        <td>土曜日</td>
-        <td>10:00~12:00</td>
-      </tr>
-    </table>
-    <h1>稽古内容</h1>
-    <ul>
-      <li>ストレッチ・準備体操</li>
-      <li>振り</li>
-      <li>基本打ち</li>
-      <li>地稽古</li>
-      <li>かかり稽古</li>
-      <li>形稽古</li>
-    </ul>
-    <h1>指導陣</h1>
-    <p>剣道部を指導していただいている方々です</p>
-    <table>
-      <tr>
-        <td>師範</td>
-        <td>石原 恒雄</td>
-      </tr>
-      <tr>
-        <td>剣道部長</td>
-        <td>水戸 和幸</td>
-      </tr>
-      <tr>
-        <td>監督</td>
-        <td>中嶋 剛</td>
-      </tr>
-      <tr>
-        <td>助監督</td>
-        <td>船戸 隆佑<br>松本 隆志<br>菊池 浩行</td>
-      </tr>
-      <tr>
-        <td>OB会長</td>
-        <td>長沼 大夫</td>
-      </tr>
-    </table>
-    <h1>剣道部として</h1>
-    <p>基本的にはこのような順序、内容で練習を行っていますが、試合があるときには、部内戦を増やす、何かを強化するための練習を入れるなど、多少内容を変化させています。</p>
-    <p>勉強が一番に優先されるので、短時間に質の高い練習ができるよう心がけ、勉強に差し障りのあるような無理な練習は行いません。</p>
-    <p>各自、自分の体力に合わせて稽古に励んでいます。</p>
-    <p>なお、週末には会社員の先輩方もよく稽古にいらっしゃいますので、充実した稽古を積むことができます。</p>
-    <h1>部活として</h1>
-    <p>色々な学科の先輩が在籍しているので、単位の取り方の相談や、勉強を教えてもらったりすることができます。</p>
-    <p>稽古後はみんなで食事に行きますが、この時1年生はタダでご飯が食べられます。この時に限らず、先輩を見つければ基本的にいつでもタダ飯です。</p>
-    <p><img src="./images/map.jpg"></p>
+    <div class="unit">
+      <h1>稽古時間</h1>
+      <table>
+        <tr>
+          <td>月曜日</td>
+          <td>16:30~18:00</td>
+        </tr>
+        <tr>
+          <td>水曜日</td>
+          <td>16:30~18:00</td>
+        </tr>
+        <tr>
+          <td>金曜日</td>
+          <td>16:30~18:00</td>
+        </tr>
+        <tr>
+          <td>土曜日</td>
+          <td>10:00~12:00</td>
+        </tr>
+      </table>
+    </div>
+    <div class="unit">
+      <h1>稽古内容</h1>
+      <ul>
+        <li>ストレッチ・準備体操</li>
+        <li>振り</li>
+        <li>基本打ち</li>
+        <li>地稽古</li>
+        <li>かかり稽古</li>
+        <li>形稽古</li>
+      </ul>
+    </div>
+    <div class="unit">
+      <h1>指導陣</h1>
+      <p>剣道部を指導していただいている方々です</p>
+      <table>
+        <tr>
+          <td>師範</td>
+          <td>石原 恒雄</td>
+        </tr>
+        <tr>
+          <td>剣道部長</td>
+          <td>水戸 和幸</td>
+        </tr>
+        <tr>
+          <td>監督</td>
+          <td>中嶋 剛</td>
+        </tr>
+        <tr>
+          <td>助監督</td>
+          <td>船戸 隆佑<br>松本 隆志<br>菊池 浩行</td>
+        </tr>
+        <tr>
+          <td>OB会長</td>
+          <td>長沼 大夫</td>
+        </tr>
+      </table>
+    </div>
+    <div class="unit">
+      <h1>剣道部として</h1>
+      <p>基本的にはこのような順序、内容で練習を行っていますが、試合があるときには、部内戦を増やす、何かを強化するための練習を入れるなど、多少内容を変化させています。</p>
+      <p>勉強が一番に優先されるので、短時間に質の高い練習ができるよう心がけ、勉強に差し障りのあるような無理な練習は行いません。</p>
+      <p>各自、自分の体力に合わせて稽古に励んでいます。</p>
+      <p>なお、週末には会社員の先輩方もよく稽古にいらっしゃいますので、充実した稽古を積むことができます。</p>
+    </div>
+    <div class="unit">
+      <h1>部活として</h1>
+      <p>色々な学科の先輩が在籍しているので、単位の取り方の相談や、勉強を教えてもらったりすることができます。</p>
+      <p>稽古後はみんなで食事に行きますが、この時1年生はタダでご飯が食べられます。この時に限らず、先輩を見つければ基本的にいつでもタダ飯です。</p>
+    </div>
+    <div class="unit">
+      <p><img src="./images/map.jpg"></p>
+    </div>
     <!-- 各ページのコンテンツはここまで-->
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">電気通信大学 体育会剣道部 東京都調布市 調布ケ丘 1丁目5-1<br>連絡先: den2kendo.hotlineｱｯﾄgmail.com(ｱｯﾄを@に変えてご送信ください)</p>
+        <p class="text-muted">連絡先: den2kendo.hotlineｱｯﾄgmail.com(ｱｯﾄを@に変えてご送信ください)<br>Copyright (c) 2015 電気通信大学 体育会剣道部 All Rights Reserved.</p>
       </div>
     </footer>
     <!-- Bootstrap core JavaScript-->
