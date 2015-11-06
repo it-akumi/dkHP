@@ -3,22 +3,17 @@ extends ./base
 block each_css
  link(href="css/index.css" type="text/css" rel="stylesheet")
 
-block navbar
- li.active
-  a(href="./index.html") トップ
- li
-  a(href="./clubInfo.html") 部活紹介
- li
-  a(href="./member.html") 部員紹介
- li
-  a(href="./schedule.html") 予定表
- li
-  a(href="./result.html") 試合結果
- li
-  a(href="./scene.html") 活動風景
- li
-  a(href="./link.html") リンク
-
 block content
- p
-  img.top-image(src="images/hyakurenjitoku.jpg" alt="Top image")
+ p: img.top-image(src="images/hyakurenjitoku.jpg" alt="Top image")
+ div.news
+  h1 <お知らせ>
+  p 
+   span.date 2015.11.10(Tue)
+   br
+   |新たにホームページを開設しました。
+   br
+   |以前のページをブックマークされている場合は、本ページを改めてご登録ください。
+   br
+   |今後とも、電気通信大学体育会剣道部をよろしくお願いいたします。
+   br
+   br

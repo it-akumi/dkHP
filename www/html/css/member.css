@@ -1,15 +1,25 @@
 caption {
-	padding-top:	80px;
+	text-align:	center;
 	font-size:	30px;
 	color:		black;
 }
 
+th {
+	text-align:	center;
+}
+
+td {
+	text-align:	center;
+}
+
 .table {
 	width:		1000px;
-	margin:		0 auto;
+	margin:		0px auto 50px;
 }
 
 .department {
-	border-top:	solid 2px blue;
-	border-bottom:	solid 2px blue;
+	margin:		20px 200px 0px;
+}
+
+.depertment p {
 }

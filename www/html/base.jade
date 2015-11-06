@@ -10,7 +10,7 @@ html
   // それぞれのページに特有のCSSを読み込む
   block each_css
  body
-  nav.navbar.navbar-inverse.navba-fixed-top
+  nav.navbar.navbar-inverse.navbar-fixed-top
    div.container
     div.navbar-header
      button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
@@ -21,8 +21,14 @@ html
      a.navbar-brand(href="./index.html") 電気通信大学 体育会剣道部
     div#navbar.collapse.navbar-collapse
      ul.nav.navbar-nav
-      // ナビゲーションバーここから active属性を付け替えるためにblock navbarを用いる
-      block navbar
+      // ナビゲーションバーここから
+      li: a(href="./index.html") トップ
+      li: a(href="./clubInfo.html") 部活紹介
+      li: a(href="./member.html") 部員紹介
+      li: a(href="./schedule.html") 予定表
+      li: a(href="./result.html") 試合結果
+      li: a(href="./scene.html") 活動風景
+      li: a(href="./link.html") リンク
       // ナビゲーションバーここまで
 
   // 各ページのコンテンツはここから
@@ -32,9 +38,9 @@ html
   footer.footer
    div.container
     p.text-muted
-     |電気通信大学 体育会剣道部 東京都調布市 調布ケ丘 1丁目5-1
-     br
      |連絡先: den2kendo.hotlineｱｯﾄgmail.com(ｱｯﾄを@に変えてご送信ください)
+     br
+     |Copyright (c) 2015 電気通信大学 体育会剣道部 All Rights Reserved.
 
   // Bootstrap core JavaScript
   // Placed at the end of the document so the pages load faster
