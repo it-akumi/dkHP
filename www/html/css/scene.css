@@ -1,0 +1,9 @@
+.scenes {
+	margin:		30px 0px 50px;
+	text-align:	center;
+}
+
+.scenes h1 {
+	margin:		0px 400px 20px;
+	border-bottom:	solid 2px blue;
+}
