@@ -1,2 +1,47 @@
-.unit {
+.leader h1 {
+	margin:			0px 550px 20px;
+	border-bottom:		solid 2px blue;
+	text-align:		center;
+}
+
+.leader p {
+	text-align:		center;
+}
+
+.leader table{
+	width:			800px;
+	margin:			0px auto 30px;
+}
+
+.leader td {
+	text-align:		center;
+}
+
+.clearfix {
+	margin:			0px 0px 30px;
+}
+
+.pull-left {
+	width:			500px;
+	margin:			0px 80px 0px;
+}
+
+.pull-left h1 {
+	margin:			0px auto 20px;
+	border-bottom:		solid 2px blue;
+	text-align:		center;
+}
+
+.pull-left table {
+	text-align:		center;
+}
+
+.pull-left ul li {
+	list-style-type:	none;
+	text-align:		center;
+}
+
+.map {
+	text-align:		center;
+	margin:			0px 0px 30px;
 }
