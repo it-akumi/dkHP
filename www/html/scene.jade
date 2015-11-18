@@ -1,9 +1,15 @@
 extends ./base
 
-block content
- h1 2015年度
- p ケンブリッジ大学遠征
- p 夏季合宿
+block each_css
+ link(href="/html/css/scene.css" type="text/css" rel="stylesheet")
 
- h1 2014年度
- p 夏季合宿
+block content
+ div.scenes
+  h1 2015年度
+  p: a(href="scenes/cambridge2015.html", target="_self") ケンブリッジ大学遠征
+  p: a(href="scenes/summer_gassyuku2015.html", target="_self") 夏期合宿
+
+ div.scenes
+  h1 2014年度
+  p: a(href="scenes/travel2014.html", target="_self") 慰安旅行
+  p: a(href="scenes/summer_gassyuku2014.html", target="_self") 夏期合宿
