@@ -1,7 +1,5 @@
-caption {
+h1 {
 	text-align:	center;
-	font-size:	30px;
-	color:		black;
 }
 
 th {
@@ -18,7 +16,7 @@ td {
 }
 
 .department {
-	margin:		20px 200px 0px;
+	margin:		20px 200px 30px;
 }
 
 .depertment p {
