@@ -5,6 +5,53 @@
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
+
+$global_setting = <<SCRIPT
+export LANG='ja_JP.UTF-8'
+cp -f /usr/share/zoneinfo/Japan /etc/localtime
+yum install -y httpd zsh git bzip2-devel.x86_64
+chsh -s /bin/zsh vagrant
+SCRIPT
+
+$local_setting = <<SCRIPT
+cd /home/vagrant
+if [ ! -d $HOME/dotfiles ]; then
+    git clone https://github.com/it-akumi/dotfiles
+    cd dotfiles
+    ./dotfilesLink.sh
+fi
+SCRIPT
+
+$anyenv_setting = <<SCRIPT
+if [ ! -d $HOME/.anyenv ]; then
+    git clone https://github.com/riywo/anyenv ~/.anyenv
+    source ~/.zshrc
+    anyenv install pyenv
+    anyenv install rbenv
+    anyenv install ndenv
+    exec /bin/zsh -l
+    cd /home/vagrant
+fi
+SCRIPT
+
+# $pyenv_setting = <<SCRIPT
+# /home/vagrant/.anyenv/envs/pyenv/bin/pyenv install 3.5.0
+# /home/vagrant/.anyenv/envs/pyenv/bin/pyenv global 3.5.0
+# /home/vagrant/.anyenv/envs/pyenv/bin/pyenv rehash
+# SCRIPT
+# 
+# $rbenv_setting = <<SCRIPT
+# /home/vagrant/.anyenv/envs/rbenv/bin/rbenv install 2.2.3
+# /home/vagrant/.anyenv/envs/rbenv/bin/rbenv global 2.2.3
+# /home/vagrant/.anyenv/envs/rbenv/bin/rbenv rehash
+# SCRIPT
+# 
+# $ndenv_setting = <<SCRIPT
+# /home/vagrant/.anyenv/envs/ndenv/bin/ndenv install v0.12.8
+# /home/vagrant/.anyenv/envs/ndenv/bin/ndenv global v0.12.8
+# /home/vagrant/.anyenv/envs/ndenv/bin/ndenv rehash
+# SCRIPT
+
 Vagrant.configure(2) do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
@@ -12,7 +59,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "CentOS6.6"
+  config.vm.box = "CentOS7.0_Minimal"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -68,5 +115,10 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
-  config.vm.provision :shell, :path => "provision.sh"
+  config.vm.provision "shell", inline: $global_setting
+  config.vm.provision "shell", inline: $local_setting , privileged: false
+  config.vm.provision "shell", inline: $anyenv_setting, privileged: false
+  # config.vm.provision "shell", inline: $pyenv_setting , privileged: false
+  # config.vm.provision "shell", inline: $rbenv_setting , privileged: false
+  # config.vm.provision "shell", inline: $ndenv_setting , privileged: false
 end
