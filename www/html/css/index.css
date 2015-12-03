@@ -3,13 +3,26 @@ body {
 }
 
 h1 {
-	color:		blue;
+	color:		    blue;
+    margin:         30px 0px 0px;
 }
 
-.news {
-	text-align:	center;
+body .news {
+    padding:        20px 0px 0px 0px;
 }
 
 .date {
-	color:		red;
+	color:		    red;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .img-responsive{
+        margin:     51px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 324px) {
+    .img-responsive{
+        margin:     51px 0px 0px 0px;
+    }
 }
