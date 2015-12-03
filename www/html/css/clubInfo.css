@@ -1,41 +1,22 @@
+.leader {
+    text-align:     center;
+	margin:		    40px 0px 40px;
+}
+
 .leader h1 {
 	border-bottom:		solid 2px blue;
-	text-align:		center;
-}
-
-.leader p {
-	text-align:		center;
-}
-
-.leader td {
-	text-align:		center;
-}
-
-.leader {
-	margin:		40px 0px 40px;
 }
 
 .clearfix {
 	margin:			0px 0px 30px;
 }
 
-.pull-left {
-	width:			500px;
-	margin:			0px 80px 0px;
+.container {
+    text-align:     center;
 }
 
-.pull-left h1 {
-	margin:			0px auto 20px;
-	border-bottom:		solid 2px blue;
-	text-align:		center;
-}
-
-.pull-left table {
-	text-align:		center;
-}
-
-.pull-left p {
-	text-align:		center;
+.container h1 {
+    border-bottom:  solid 2px blue;
 }
 
 .map {
