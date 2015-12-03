@@ -1,26 +1,13 @@
 h1 {
-	margin:		40px 0px 30px;
+	text-align:	    center;
+	margin:		    40px 0px 30px;
+    border-bottom:  solid 2px blue;
 }
 
 td {
-	text-align:	center;
+	text-align:	    center;
 }
 
 th {
-	text-align:	center;
-}
-
-.pull-left{
-	padding-left:	40px;
-}
-
-.calendar{
-	height:		600px;
-	width:		600px;
-	border:		0px;
-}
-
-.pull-right{
-	padding-right:	40px;
-	width:		600px;
+	text-align:	    center;
 }
