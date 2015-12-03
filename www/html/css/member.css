@@ -1,20 +1,17 @@
 h1 {
-	text-align:	center;
+    margin:         0px 0px 30px;
+	text-align:	    center;
+    border-bottom:  solid 2px blue;
 }
 
 th {
-	text-align:	center;
+	text-align:	    center;
 }
 
 td {
-	text-align:	center;
-}
-
-.table {
-	width:		1000px;
-	margin:		0px auto 50px;
+	text-align:	    center;
 }
 
 .department {
-	margin:		40px 200px 30px;
+	margin:		    40px 200px 0px;
 }
