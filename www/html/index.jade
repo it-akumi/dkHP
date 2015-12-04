@@ -2,6 +2,9 @@ extends ./base
 
 block each_css
  link(href="/html/css/index.css" type="text/css" rel="stylesheet")
+ // 以下、CSSじゃないけどSEO対策として必要
+ meta(name="keywords" content="電通,電気通信大学,UEC,剣道")
+ meta(name="description" content="電気通信大学体育会剣道部のホームページです。活動内容の紹介等を行っています。")
 
 block content
  p: img.img-responsive(src="/html/images/index/hyakurenjitoku.jpg" alt="Top image")
