@@ -4,6 +4,27 @@ h1 {
     border-bottom:  solid 2px blue;
 }
 
+@media screen and (max-width: 767px){ /* col-xs */
+    iframe {
+        height: 400px;
+        width:  100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){ /* col-sm */
+    iframe {
+        height: 480px;
+        width:  100%;
+    }
+}
+
+@media screen and (min-width: 992px){ /* col-md, col-lg */
+    iframe {
+        height: 540px;
+        width:  100%;
+    }
+}
+
 td {
 	text-align:	    center;
 }
