@@ -15,10 +15,11 @@ body {
 	bottom:			0;
 	width:			100%;
 	/* Set the fixed height of the footer here */
-	/*height:			90px; min-width: 761px */
+	height:			90px; /*min-width: 761px*/
 	background-color:	#222222;
 }
 
+/*
 @media screen and (max-width 306px) {
     .footer{
         height:     257px;
@@ -54,6 +55,7 @@ body {
         .height:    90px;
     }
 }
+*/
 
 /* Custom page CSS
  * -------------------------------------------------- */
@@ -71,12 +73,59 @@ body > .container {
 .container .text-muted {
 	margin:			20px 0;
 	color:			#c0c0c0;
-	font-size:		120%;
 }
 
 .footer > .container {
 	padding-right:		15px;
 	padding-left:		15px;
+}
+
+@media screen and (max-width: 324px){
+    .container .text-muted {
+        font-size:  10px;
+    }
+}
+
+@media screen and (min-width: 325px) and (max-width: 479px){
+    .container .text-muted {
+        font-size:  12px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 519px){
+    .container .text-muted {
+        font-size:  14px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 519px){
+    .container .text-muted {
+        font-size:  14px;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 639px){
+    .container .text-muted {
+        font-size:  16px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px){ /* col-xs */
+    .container .text-muted {
+        font-size:  18px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){ /* col-sm */
+    .container .text-muted {
+        font-size:  20px;
+    }
+}
+
+@media screen and (min-width: 992px){ /* col-md, col-lg */
+    .container .text-muted {
+        font-size:  22px;
+    }
 }
 
 code {
