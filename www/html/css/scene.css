@@ -6,3 +6,16 @@
 .scenes h1 {
 	border-bottom:	solid 2px blue;
 }
+
+@media screen and (max-width: 290px){
+    .scenes h1{
+        font-size:  20px;
+    }
+}
+
+@media screen and (min-width: 291px) and (max-width: 380px){
+    .scenes h1{
+        font-size:  25px;
+    }
+}
+
