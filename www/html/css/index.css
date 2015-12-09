@@ -9,6 +9,9 @@ h1 {
 
 body .news {
     padding:        20px 0px 0px 0px;
+    height:         300px;
+    overflow:       auto;
+    overflow-x:     hidden;
 }
 
 .date {
