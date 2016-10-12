@@ -34,32 +34,14 @@ if [ ! -d $HOME/.anyenv ]; then
 fi
 SCRIPT
 
-# $pyenv_setting = <<SCRIPT
-# /home/vagrant/.anyenv/envs/pyenv/bin/pyenv install 3.5.0
-# /home/vagrant/.anyenv/envs/pyenv/bin/pyenv global 3.5.0
-# /home/vagrant/.anyenv/envs/pyenv/bin/pyenv rehash
-# SCRIPT
-# 
-# $rbenv_setting = <<SCRIPT
-# /home/vagrant/.anyenv/envs/rbenv/bin/rbenv install 2.2.3
-# /home/vagrant/.anyenv/envs/rbenv/bin/rbenv global 2.2.3
-# /home/vagrant/.anyenv/envs/rbenv/bin/rbenv rehash
-# SCRIPT
-# 
-# $ndenv_setting = <<SCRIPT
-# /home/vagrant/.anyenv/envs/ndenv/bin/ndenv install v0.12.8
-# /home/vagrant/.anyenv/envs/ndenv/bin/ndenv global v0.12.8
-# /home/vagrant/.anyenv/envs/ndenv/bin/ndenv rehash
-# SCRIPT
-
-Vagrant.configure(2) do |config|
+Vagrant.configure("2") do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "CentOS7.0_Minimal"
+  config.vm.box = "CentOS7.0"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -69,7 +51,7 @@ Vagrant.configure(2) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  # config.vm.network "forwarded_port", guest: 8000, host: 8080
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -112,13 +94,10 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   # config.vm.provision "shell", inline: <<-SHELL
-  #   sudo apt-get update
-  #   sudo apt-get install -y apache2
+  #   apt-get update
+  #   apt-get install -y apache2
   # SHELL
   config.vm.provision "shell", inline: $global_setting
   config.vm.provision "shell", inline: $local_setting , privileged: false
   config.vm.provision "shell", inline: $anyenv_setting, privileged: false
-  # config.vm.provision "shell", inline: $pyenv_setting , privileged: false
-  # config.vm.provision "shell", inline: $rbenv_setting , privileged: false
-  # config.vm.provision "shell", inline: $ndenv_setting , privileged: false
 end
