@@ -18,7 +18,7 @@ cd /home/vagrant
 if [ ! -d $HOME/dotfiles ]; then
     git clone https://github.com/it-akumi/dotfiles
     cd dotfiles
-    ./dotfilesLink.sh
+    ./make_links.sh
 fi
 SCRIPT
 
