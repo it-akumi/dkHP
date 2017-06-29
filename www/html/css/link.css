@@ -6,3 +6,33 @@
 .links h1 {
 	border-bottom:	solid 2px blue;
 }
+
+@media screen and (max-width: 290px){
+    .links h1{
+        font-size:  15px;
+    }
+    .links p{
+        font-size:  14px;
+    }
+}
+
+@media screen and (min-width: 291px) and (max-width: 380px){
+    .links h1{
+        font-size:  18px;
+    }
+    .links p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 381px) and (max-width: 419px){
+    .links h1{
+        font-size:  24px;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 480px){
+    .links h1{
+        font-size:  30px;
+    }
+}
